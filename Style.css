@@ -1,0 +1,31 @@
+body {background-color: azure;  text-align: center; align-items: center;
+font-family: Verdana;
+}
+
+button {margin-bottom: 20px; margin-top: 20px;
+background-color: lawngreen;
+border: none;
+padding: 8px;
+font-size: 16px;
+border-radius: 4px;
+}
+
+ul, ol {
+  list-style-position: inside; 
+  padding: 0;
+  font-size: 22px;
+}
+li {
+    margin-top: 20px;
+}
+img {
+    border: 4px solid #d6dbdf; 
+    width: 550px; height: 400px;
+    margin: 15px;
+}
+p{
+    font-size: 16px;
+}
+html, body {
+    overflow-y: auto; 
+}

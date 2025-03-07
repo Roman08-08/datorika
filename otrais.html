@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Kā nekļūt atkarīgam, lietojot viedās ierīces un internetu</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            .block1 {
+                display: flex;
+            }
+            button {
+                margin-left: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <div class="w3-top">
+            <div class="w3-bar w3-green w3-card-4 w3-border">
+    <a href="#tema" class="w3-bar-item w3-button w3-padding-large">Tēma</a>
+    <a href="#l" class="w3-bar-item w3-button w3-padding-large">1.darbs</a>
+        </div>
+        </div>
+        <br>
+        <br>
+        <h1 id="tema">Kā nekļūt atkarīgam, lietojot viedās ierīces un internetu.</h1>
+        
+        <div>
+            <ol>
+                <div class="block1"><li>Laiku ierobežojumu nosakšana</li><button onclick="funk1()" class="button">Lasīt mazāk</button></li><button onclick="funk2()" class="button">Lasīt vairāk</button></div>
+                <ul id="pirm"><li>Izmantojiet lietotnes, kas kontrolē ekrāna laiku vai veidojiet dienas plānu,<br>
+                        kurā iekļaujāt laiku bez ierīcēm.</li></ul>
+                <div class="block1"><li>Attīstīt citas intereses un hobijus</li><button onclick="funk3()" class="button">Lasīt mazāk</button></li><button onclick="funk4()" class="button">Lasīt vairāk</button></div>
+                <ul id="otr"><li>Pavadiet vairāk laika ārā, sportojiet vai nodarbojieties ar radošām aktivitātēm.<br>
+Satiekāties ar draugiem un ģimeni klātienē, nevis tikai tiešsaistē.</li></ul>
+                <div class="block1"><li>Apzināta ierīču lietošana</li><button onclick="funk5()" class="button">Lasīt mazāk</button></li><button onclick="funk6()" class="button">Lasīt vairāk</button></div>
+                <ul id="tri"><li>Izmantojiet internetu tikai konkrētu mērķu sasniegšanai, nevis bezmērķīgai sērfošanai<br>
+                        un samaziniet nevajadzīgu sociālo tīklu lietošanu.</li></ul>
+                <div class="block1"><li>Izveidot veselīgus parādumus</li><button onclick="funk7()" class="button">Lasīt mazāk</button></li><button onclick="funk8()" class="button">Lasīt vairāk</button></div>
+                <ul id="cetr"><li>Nenovietojiet telefonu blakus gultai – tas traucē miega kvalitāti.<br>
+Nosakiet laiku, kad pārtraucāt darbu pie datora un atslēdzāties no interneta.</li></ul>
+            </ol>
+        </div>
+        <div><img src="images/animation new.gif" alt="social network"/></div>
+        <div><a href="index.html" target="_self"><img src="images/bulta.png" id="l"></a></div>
+        <script>
+          function funk1() {
+              document.getElementById("pirm").style.display="none";
+          }  
+          function funk2() {
+              document.getElementById("pirm").style.display="block";
+          } 
+          function funk3() {
+              document.getElementById("otr").style.display="none";
+          }  
+          function funk4() {
+              document.getElementById("otr").style.display="block";
+          } 
+          function funk5() {
+              document.getElementById("tri").style.display="none";
+          }  
+          function funk6() {
+              document.getElementById("tri").style.display="block";
+          } 
+          function funk7() {
+              document.getElementById("cetr").style.display="none";
+          }  
+          function funk8() {
+              document.getElementById("cetr").style.display="block";
+          } 
+            </script>
+    </body>
+</html>
