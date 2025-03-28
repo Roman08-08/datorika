@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Gaidot dzimšanas dienu...</h1>
+        <hr>
+        <form>
+            <label for="a">“Ievadi pilnu datumu, kad Tev būs tuvākā dzimšanas diena </label><br>
+            <label for="gads">gads</label><input name="gads" id="gads" type="text"><br>
+            <label for="menesis">mēnesis</label><input name="menesis" id="menesis" type="text"><br>
+            <label for="diena">diena</label><input name="datums" id="datums" type="text"><br>
+            <input type="button" name="poga" value="Aprēķināt dienu skaitu līdz dzimšanas dienai" onclick = "dienass();"><br>
+            <label for="sv">Līdz svētkiem atlikušas</label> <input type="text" name="dienas" id="dienas" value="dienas : ))">
+            
+        </form>
+        <script>
+            function dienass() {
+                let d = document.getElementById("datums").value;
+                let g = document.getElementById("gads").value;
+                let m = document.getElementById("menesis").value - 1;
+                let birthday = new Date(g, m, d);
+                let date = new Date();
+                let diff = birthday.getTime() - date.getTime();
+                let daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
+                document.getElementById("dienas").value = "dienas : " + daysLeft;
+            }
+        </script>
+    </body>
+</html>
